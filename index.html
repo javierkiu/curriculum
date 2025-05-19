@@ -19,6 +19,8 @@
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+                <li><a href="#informacion-adicional">Información adicional</a></li>
             </ul>
         </nav>
     </header>
@@ -26,6 +28,7 @@
     <main>
         <section id="perfil">
             <h2>Perfil</h2>
+            <img src="https://placehold.co/150x150" alt="Foto de perfil de Javier Rodriguez" style="border-radius:50% ; display:block; margin-bottom:1em;">
             <p>Breve descripción sobre ti, tus objetivos profesionales y tus fortalezas principales.</p>
         </section>
 
@@ -36,6 +39,8 @@
 
         <section id="educacion">
             <h2>Educación</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0"  allowfullscreen></iframe>
+
             <p>Detalles sobre tu formación académica.</p>
         </section>
 
@@ -44,9 +49,140 @@
             <p>Habilidades técnicas, blandas o idiomas que dominas.</p>
         </section>
 
+        <section id="informacion-adicional">
+            <h2>Información adicional</h2>
+
+            <p>Para conocer más sobre mis proyectos y trayectoria profesional, te invito a visitar 
+                <a href="https://www.linkedin.com/in/javierrodriguez" target="_blank" rel="noopener noreferrer">
+                    mi perfil de LinkedIn
+                </a>.
+            </p>
+
+            <h3>Lista ordenada de logros</h3>
+            <ol>
+                <li>Certificación en desarrollo web full-stack.</li>
+                <li>Participación en proyectos internacionales.</li>
+                <li>Reconocimiento como empleado del mes en dos ocasiones.</li>
+            </ol>
+
+            <h3>Herramientas que manejo</h3>
+            <ul>
+                <li>HTML5 y CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Git y GitHub</li>
+            </ul>
+
+            <h3>Resumen de tecnologías</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                        <th>Experiencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>HTML</th>
+                        <td>Avanzado</td>
+                        <td>5 años</td>
+                    </tr>
+                    <tr>
+                        <th>CSS</th>
+                        <td>Avanzado</td>
+                        <td>5 años</td>
+                    </tr>
+                    <tr>
+                        <th>JavaScript</th>
+                        <td>Intermedio</td>
+                        <td>3 años</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Correo electrónico, número de teléfono, enlaces a redes profesionales, etc.</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" name="ciudad" required>
+                    <option value="" disabled selected>Seleccione una ciudad</option>
+                    <option value="guayaquil">Guayaquil</option>
+                    <option value="quito">Quito</option>
+                    <option value="cuenca">Cuenca</option>
+                </select>
+
+                <fieldset>
+                    <legend>Preferencia de contacto:</legend>
+                    <input type="radio" id="email" name="contacto" value="email" required>
+                    <label for="email">Correo electrónico</label>
+
+                    <input type="radio" id="telefono" name="contacto2" value="telefono" required>
+                    <label for="telefono">Teléfono</label>
+                </fieldset>
+
+                <label for="intereses">Áreas de interés:</label>
+                <select id="intereses" name="intereses[]" multiple required size="3">
+                    <option value="desarrollo">Desarrollo web</option>
+                    <option value="diseño">Diseño gráfico</option>
+                    <option value="marketing">Marketing digital</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.4310945294031!2d-79.9671627304863!3d-2.1479636999999965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13ef90d1b5d9%3A0x91b9a7f87e9cc88f!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716120955829!5m2!1ses!2sec" 
+                width="100%" 
+                height="500" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+
+        <section id="referencias">
+            <h2>Referencias</h2>
+
+            <article>
+                <blockquote>
+                    “Javier demostró una gran responsabilidad y compromiso en cada proyecto.”
+                </blockquote>
+                <p>
+                    <span>María González</span>
+                    <span>Gerente de Proyectos, SoftTech S.A.</span>
+                    <span>Trabajó con Javier durante 2 años liderando equipos de desarrollo web.</span>
+                </p>
+            </article>
+
+            <article>
+                <blockquote>
+                    “Siempre dispuesto a aprender y colaborar, Javier fue esencial en nuestro equipo.”
+                </blockquote>
+                <p><strong>Carlos Méndez</strong><br>
+                Líder Técnico, DevSolutions<br>
+                Colaboró en la implementación de sistemas ERP personalizados.</p>
+            </article>
+
+            <article>
+                <blockquote>
+                    “Un profesional confiable que cumple con tiempos y calidad excepcionales.”
+                </blockquote>
+                <p><strong>Lucía Rivas</strong><br>
+                CEO, Agencia Creativa Digital<br>
+                Coordinó campañas digitales con Javier en varios clientes importantes.</p>
+            </article>
         </section>
     </main>
 
