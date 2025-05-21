@@ -6,6 +6,10 @@
     <meta name="keywords" content="currículum, CV, experiencia laboral, educación, habilidades, [Tu Nombre]">
     <meta name="description" content="Currículum de [Tu Nombre], incluyendo experiencia, educación, habilidades y más.">
     <meta name="author" content="[Tu Nombre]">
+    <link rel="stylesheet" href="./stylessheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Currículum de Javier Rodriguez</title>
 </head>
 <body>
@@ -13,7 +17,7 @@
     <header>
         <h1>Javier Rodriguez</h1>
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="#perfil">Perfil</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#educacion">Educación</a></li>
@@ -27,30 +31,30 @@
 
     <main>
         <section id="perfil">
-            <h2>Perfil</h2>
-            <img src="https://placehold.co/150x150" alt="Foto de perfil de Javier Rodriguez" style="border-radius:50% ; display:block; margin-bottom:1em;">
+            <h2 class="subtitle">Perfil</h2>
+            <img src="https://placehold.co/150x150" alt="Foto de perfil de Javier Rodriguez" style="border-radius:50% ; display:block; margin-bottom:1em;" id="photo">
             <p>Breve descripción sobre ti, tus objetivos profesionales y tus fortalezas principales.</p>
         </section>
 
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
             <p>Listado de tus experiencias laborales más relevantes.</p>
         </section>
 
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0"  allowfullscreen></iframe>
 
             <p>Detalles sobre tu formación académica.</p>
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <p>Habilidades técnicas, blandas o idiomas que dominas.</p>
         </section>
 
         <section id="informacion-adicional">
-            <h2>Información adicional</h2>
+            <h2 class="subtitle">Información adicional</h2>
 
             <p>Para conocer más sobre mis proyectos y trayectoria profesional, te invito a visitar 
                 <a href="https://www.linkedin.com/in/javierrodriguez" target="_blank" rel="noopener noreferrer">
@@ -104,7 +108,7 @@
 
 
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <p>Correo electrónico, número de teléfono, enlaces a redes profesionales, etc.</p>
             <form action="#" method="post">
                 <label for="nombre">Nombre completo:</label>
@@ -153,7 +157,7 @@
 
 
         <section id="referencias">
-            <h2>Referencias</h2>
+            <h2 class="subtitle">Referencias</h2>
 
             <article>
                 <blockquote>
