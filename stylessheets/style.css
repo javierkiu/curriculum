@@ -2,25 +2,66 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background: linear-gradient(120deg, #f6fafd 0%, #e9f1fb 100%);
+    color: #234;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #234;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+}
+
 h1 {
     text-align: center;
     font-weight: bold;
 }
 
-#photo {
-    width: 8vw;
-    height: auto;
+.subtitle {
+    color: #5a6d89;
+    text-transform: uppercase;
+    border-bottom: 1px solid #b6c6e0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 6px 6px 0 0;
 }
 
-.subtitle {
-    color: rgb(151 156 165 / 0.89);
-    text-transform: uppercase;
-    border-bottom: 1px solid #ccc;
+#photo {
+    width: 8vw;
+    min-width: 80px;
+    max-width: 160px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #b6c6e0;
+    box-shadow: 0 2px 8px rgba(80, 120, 180, 0.12);
+    display: block;
+    margin: 1.5rem auto 1rem auto;
 }
 
 footer p {
     text-align: right;
     font-style: italic;
+    color: #5a6d89;
+    background: rgba(255,255,255,0.7);
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0 0 0;
+}
+
+table {
+    width: 100%;
+    border: 1.5px solid #b6c6e0;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 1px 4px rgba(80, 120, 180, 0.07);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
 }
 
 table, th, td {
@@ -29,8 +70,25 @@ table, th, td {
 }
 
 th, td {
-    padding: 8px;
+    padding: 10px 14px;
     text-align: left;
+    border: 1px solid #b6c6e0;
+}
+
+th {
+    background: #e0eafc;
+    color: #234;
+    font-weight: 600;
+}
+
+nav {
+    position: sticky;
+    background: linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%);
+    padding: 14px 0;
+    box-shadow: 0 4px 12px rgba(80, 120, 180, 0.10);
+    z-index: 1000;
+    border-bottom: 2px solid #b6c6e0;
+    transition: background 0.3s;
 }
 
 nav > ul {
@@ -38,33 +96,50 @@ nav > ul {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
-    justify-content: space-evenly;
+    gap: 1.5rem;
+    justify-content: center;
     font-family: "Raleway", sans-serif;
-    list-style: none;    
-    padding: 0;     
-    margin: 0;   
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-#menu a {
-    text-decoration: none;  
-    color: inherit;        
-}
+
 #menu li {
-    margin: 0 10px; 
-    padding: 5px 10px; 
-    background-color: #f0f0f0; 
-    border-radius: 5px; 
-    transition: background-color 0.3s;
+    margin: 0 8px;
+    padding: 8px 18px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(180, 200, 220, 0.10);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
+
 #menu li:hover {
-    background-color: #e0e0e0; 
+    background: #b6c6e0;
+    color: #234;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 12px rgba(80, 120, 180, 0.15);
+}
+
+#menu a {
+    text-decoration: none;
+    color: #234;
+    transition: color 0.2s;
+}
+
+#menu li:hover a {
+    color: #123a5a;
 }
 
 section {
-    border: 0.2pt solid #cedddd;
-    margin: 4px 2px 8px 2px;
-    padding: 1.5% 0.8%;
-    margin-bottom: 1.2rem;
+    border: 1.5px solid #b6c6e0;
+    background: rgba(255,255,255,0.85);
+    border-radius: 12px;
+    margin: 16px auto 24px auto;
+    padding: 2% 2.5%;
+    box-shadow: 0 2px 8px rgba(80, 120, 180, 0.08);
+    max-width: 900px;
 }
 
 section form{
@@ -90,14 +165,30 @@ section form{
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    background: rgba(255,255,255,0.85);
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(80, 120, 180, 0.08);
+    border: 1.5px solid #b6c6e0;
+    margin-bottom: 2rem;
 }
 #referencias h2 {
     flex: 0 0 100%;
+    color: #234;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 1rem;
 }
 #referencias article{
     flex: 1 1 calc(33.333% - 1rem);
     box-sizing: border-box;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 0.8rem;
+    border: 1px solid #b6c6e0;
+    border-radius: 8px;
+    background: #f6fafd;
+    box-shadow: 0 1px 4px rgba(80, 120, 180, 0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#referencias article:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(80, 120, 180, 0.13);
 }
