@@ -1,198 +1,181 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="currículum, CV, experiencia laboral, educación, habilidades, [Tu Nombre]">
-    <meta name="description" content="Currículum de [Tu Nombre], incluyendo experiencia, educación, habilidades y más.">
-    <meta name="author" content="[Tu Nombre]">
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./stylessheets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Currículum de Javier Rodriguez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
     <header>
-        <h1>Javier Rodriguez</h1>
-        <nav>
-            <ul id="menu">
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
+        <i class="bi bi-list" id="sidebarToggle"></i> 
+        <nav class="categories">
+            <ul>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#referencias">Referencias</a></li>
-                <li><a href="#informacion-adicional">Información adicional</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
             </ul>
         </nav>
     </header>
-
+    <aside id="sidebar" class="sidebar">
+        <button id="closeSidebar" class="close-btn">&times;</button>
+        <ul>
+            <li><a href="#habilidades"">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+        </ul>
+    </aside>
+    <section class="seccion_main" id="perfil">
+        <img src="./img/me.jpg" width="100px" alt="Foto de perfil">
+        <span class="name_perfil">Javier Rodriguez</span>
+        <span>Web Developer</span>
+        <span>Estudiante de la carrera de computación en ESPOL. Apasionado en el desarrollo web.</span>
+    </section>
     <main>
-        <section id="perfil">
-            <h2 class="subtitle">Perfil</h2>
-            <img src="https://placehold.co/150x150" alt="Foto de perfil de Javier Rodriguez" style="border-radius:50% ; display:block; margin-bottom:1em;" id="photo">
-            <p>Breve descripción sobre ti, tus objetivos profesionales y tus fortalezas principales.</p>
+        <section class="seccion_main" id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="box_container">
+                <div class="box">
+                    <i class="bi bi-code-slash"></i>
+                    <h3>Lenguajes de Programación</h3>
+                    <p>Python, Java, JavaScript, C++</p>
+                </div>
+                <div class="box">
+                    <i class="bi bi-database"></i>
+                    <h3>Databases</h3>
+                    <p>MySQL</p>
+                </div>
+                <div class="box">
+                    <i class="bi bi-git"></i>
+                    <h3>Version Control</h3>
+                    <p>Git, GitHub</p>
+                </div>
+                <div class="box">
+                    <i class="bi bi-window"></i>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, C++</p>
+                </div>
+            </div>
         </section>
 
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia</h2>
-            <p>Listado de tus experiencias laborales más relevantes.</p>
+        <section class="seccion_main" id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="box_container">
+                <a href="https://javierkiu.github.io/batabit/" target="_blank" class="project-link">
+                    <div class="box_project">
+                        <img src="./img/batabit.png" alt="batatabit" class="project-img">
+                        <div class="box_project_text">
+                            <h3>Página Batatabit</h3>
+                            <p>Página simple realizada con HTML y CSS, que simula la navegación entre los diferentes precios y tendencias en el mercado de criptomonedas.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://javierkiu.github.io/calculadoraJS/" target="_blank" class="project-link">
+                    <div class="box_project">
+                        <img src="./img/calculator.png" alt="calculator" class="project-img">
+                        <h3>Calculadora simple</h3>
+                        <p>Calculadora con funciones sencillas, fue creada como práctica de JavaScript, HTML y CSS.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/javierkiu/Proyecto_EstructuraDeDatos" target="_blank" class="project-link">
+                    <div class="box_project">
+                        <img src="./img/venta.png" alt="venta" class="project-img">
+                        <h3>App de compra/venta de vehiculos</h3>
+                        <p>Proyecto realizado en Java que simula el proceso de compra y venta de vehiculos.</p>
+                    </div>
+                </a>
+            </div>
         </section>
-
-        <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0"  allowfullscreen></iframe>
-
-            <p>Detalles sobre tu formación académica.</p>
-        </section>
-
-        <section id="habilidades">
-            <h2 class="subtitle">Habilidades</h2>
-            <p>Habilidades técnicas, blandas o idiomas que dominas.</p>
-        </section>
-
-        <section id="informacion-adicional">
-            <h2 class="subtitle">Información adicional</h2>
-
-            <p>Para conocer más sobre mis proyectos y trayectoria profesional, te invito a visitar 
-                <a href="https://www.linkedin.com/in/javierrodriguez" target="_blank" rel="noopener noreferrer">
-                    mi perfil de LinkedIn
-                </a>.
-            </p>
-
-            <h3>Lista ordenada de logros</h3>
-            <ol>
-                <li>Certificación en desarrollo web full-stack.</li>
-                <li>Participación en proyectos internacionales.</li>
-                <li>Reconocimiento como empleado del mes en dos ocasiones.</li>
-            </ol>
-
-            <h3>Herramientas que manejo</h3>
-            <ul>
-                <li>HTML5 y CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>Git y GitHub</li>
-            </ul>
-
-            <h3>Resumen de tecnologías</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tecnología</th>
-                        <th>Nivel</th>
-                        <th>Experiencia</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>HTML</th>
-                        <td>Avanzado</td>
-                        <td>5 años</td>
-                    </tr>
-                    <tr>
-                        <th>CSS</th>
-                        <td>Avanzado</td>
-                        <td>5 años</td>
-                    </tr>
-                    <tr>
-                        <th>JavaScript</th>
-                        <td>Intermedio</td>
-                        <td>3 años</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-
-
-        <section id="contacto">
-            <h2 class="subtitle">Contacto</h2>
-            <p>Correo electrónico, número de teléfono, enlaces a redes profesionales, etc.</p>
-            <form action="#" method="post">
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="ciudad">Ciudad:</label>
-                <select id="ciudad" name="ciudad" required>
-                    <option value="" disabled selected>Seleccione una ciudad</option>
-                    <option value="guayaquil">Guayaquil</option>
-                    <option value="quito">Quito</option>
-                    <option value="cuenca">Cuenca</option>
-                </select>
-
-                <fieldset>
-                    <legend>Preferencia de contacto:</legend>
-                    <input type="radio" id="email" name="contacto" value="email" required>
-                    <label for="email">Correo electrónico</label>
-
-                    <input type="radio" id="telefono" name="contacto2" value="telefono" required>
-                    <label for="telefono">Teléfono</label>
-                </fieldset>
-
-                <label for="intereses">Áreas de interés:</label>
-                <select id="intereses" name="intereses[]" multiple required size="3">
-                    <option value="desarrollo">Desarrollo web</option>
-                    <option value="diseño">Diseño gráfico</option>
-                    <option value="marketing">Marketing digital</option>
-                </select>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.4310945294031!2d-79.9671627304863!3d-2.1479636999999965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13ef90d1b5d9%3A0x91b9a7f87e9cc88f!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716120955829!5m2!1ses!2sec" 
-                width="100%" 
-                height="500" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
-
-
-        <section id="referencias">
-            <h2 class="subtitle">Referencias</h2>
-
-            <article>
+        <div class="embed_container">
+            <div class="embed_left">
+                <section class="seccion_main" id="educacion">
+                    <h2>Educación</h2>
+                    <ul>
+                        <li>ESPOL - Ingeniería en Computación</li>
+                        <span>2022 - Actualidad</span>
+                    </ul>
+                </section>
+                <section class="seccion_main" id="experiencia">
+                    <h2>Experiencia</h2>
+                    <ul>
+                        <li>Ayudante de Gestión - Laboratorio de Economía Experimental de ESPOL</li>
+                        <span>2024 - Actualidad</span>
+                    </ul>
+                </section>
+                <section class="seccion_main" id="contacto">
+                    <h2>Contacto</h2>
+                    <form action="" class="contact_form">
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        <input type="email" id="email" name="email" placeholder="Tu correo" required>
+                        <textarea id="message" name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
+            <div class="embed_right">
+                <div class="video_container">
+                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/mjkByzTo3aE" title="Aplicación Java de compra y venta de vehículos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                        <span>Video de un proyecto en Java.</span>
+                </div>
+                <div class="map_container">
+                    <iframe width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!4v1748659337900!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ00xcmJwVXc.!2m2!1d-2.147448290987572!2d-79.96818017275172!3f239.1978911500869!4f-21.29469076419079!5f0.4000000000000002" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <span>Ubicación de ESPOL en el campus Gustavo Galindo, Guayaquil, Ecuador.</span>
+                </div>
+            </div>
+        </div>
+            
+        <section class="seccion_main" id="referencias">
+            <h2>Referencias</h2>
+            <article class="referencia">
                 <blockquote>
-                    “Javier demostró una gran responsabilidad y compromiso en cada proyecto.”
+                    <p>
+                        <span class="nombre_ref">Ing. María Fernanda Pérez</span>
+                        <span class="cargo_ref">Profesora de Computación, ESPOL</span>
+                        <span class="correo_ref">mf.perez@espol.edu.ec</span>
+                        <span class="tel_ref">Tel: +593 4 2269 000</span>
+                    </p>
                 </blockquote>
-                <p>
-                    <span>María González</span>
-                    <span>Gerente de Proyectos, SoftTech S.A.</span>
-                    <span>Trabajó con Javier durante 2 años liderando equipos de desarrollo web.</span>
-                </p>
             </article>
-
-            <article>
+            <article class="referencia">
                 <blockquote>
-                    “Siempre dispuesto a aprender y colaborar, Javier fue esencial en nuestro equipo.”
+                    <p>
+                        <span class="nombre_ref">Ing. Carlos Jiménez</span>
+                        <span class="cargo_ref">Coordinador de Laboratorio de Economía Experimental, ESPOL</span>
+                        <span class="correo_ref">c.jimenez@espol.edu.ec</span>
+                        <span class="tel_ref">Tel: +593 4 2269 001</span>
+                    </p>
                 </blockquote>
-                <p><strong>Carlos Méndez</strong><br>
-                Líder Técnico, DevSolutions<br>
-                Colaboró en la implementación de sistemas ERP personalizados.</p>
-            </article>
-
-            <article>
-                <blockquote>
-                    “Un profesional confiable que cumple con tiempos y calidad excepcionales.”
-                </blockquote>
-                <p><strong>Lucía Rivas</strong><br>
-                CEO, Agencia Creativa Digital<br>
-                Coordinó campañas digitales con Javier en varios clientes importantes.</p>
             </article>
         </section>
+
     </main>
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const closeSidebar = document.getElementById('closeSidebar');
 
-    <footer>
-        <p>&copy; 2025 Javier Rodriguez. Todos los derechos reservados.</p>
-    </footer>
-
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.add('active');
+            document.body.classList.add('sidebar-open');
+        });
+        closeSidebar.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+            document.body.classList.remove('sidebar-open');
+        });
+        sidebar.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                document.body.classList.remove('sidebar-open');
+            });
+        });
+</script>
 </body>
 </html>
