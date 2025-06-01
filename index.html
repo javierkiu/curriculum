@@ -16,21 +16,23 @@
         <nav class="categories">
             <ul>
                 <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#info-contacto">Información de Contacto</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contactame">Contáctame</a></li>
             </ul>
         </nav>
     </header>
     <aside id="sidebar" class="sidebar">
         <button id="closeSidebar" class="close-btn">&times;</button>
         <ul>
-            <li><a href="#habilidades"">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#info-contacto">Información de Contacto</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contactame">Contáctame</a></li>
         </ul>
     </aside>
     <section class="seccion_main" id="perfil">
@@ -38,6 +40,24 @@
         <span class="name_perfil">Javier Rodriguez</span>
         <span>Web Developer</span>
         <span>Estudiante de la carrera de computación en ESPOL. Apasionado en el desarrollo web.</span>
+    </section>
+
+    <section class="seccion_main info_contacto" id="info-contacto">
+        <h2>Información de Contacto</h2>
+        <ul>
+            <li>
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:jajorodr@espol.edu.ec">jajorodr@espol.edu.ec</a>
+            </li>
+            <li>
+                <i class="bi bi-github"></i>
+                <a href="https://github.com/javierkiu" target="_blank">github.com/javierkiu</a>
+            </li>
+            <li>
+                <i class="bi bi-linkedin"></i>
+                <a href="https://linkedin.com/in/javier-rodríguez-rivas-709527279" target="_blank">linkedin.com/in/javierkiu</a>
+            </li>
+        </ul>
     </section>
     <main>
         <section class="seccion_main" id="habilidades">
@@ -92,10 +112,14 @@
                         <p>Proyecto realizado en Java que simula el proceso de compra y venta de vehiculos.</p>
                     </div>
                 </a>
+                <div class="video_container">
+                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/mjkByzTo3aE" title="Aplicación Java de compra y venta de vehículos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                    <span>Video de un proyecto en Java.</span>
+                </div>
             </div>
         </section>
-        <div class="embed_container">
-            <div class="embed_left">
+        <div id="educacion_experiencia_container">
+            <div class="educacion_experiencia">
                 <section class="seccion_main" id="educacion">
                     <h2>Educación</h2>
                     <ul>
@@ -109,28 +133,24 @@
                         <li>Ayudante de Gestión - Laboratorio de Economía Experimental de ESPOL</li>
                         <span>2024 - Actualidad</span>
                     </ul>
-                </section>
-                <section class="seccion_main" id="contacto">
-                    <h2>Contacto</h2>
-                    <form action="" class="contact_form">
-                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-                        <input type="email" id="email" name="email" placeholder="Tu correo" required>
-                        <textarea id="message" name="message" rows="4" placeholder="Tu mensaje" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </section>
             </div>
-            <div class="embed_right">
-                <div class="video_container">
-                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/mjkByzTo3aE" title="Aplicación Java de compra y venta de vehículos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
-                        <span>Video de un proyecto en Java.</span>
-                </div>
-                <div class="map_container">
-                    <iframe width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!4v1748659337900!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ00xcmJwVXc.!2m2!1d-2.147448290987572!2d-79.96818017275172!3f239.1978911500869!4f-21.29469076419079!5f0.4000000000000002" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <span>Ubicación de ESPOL en el campus Gustavo Galindo, Guayaquil, Ecuador.</span>
-                </div>
+            <div class="map_container">
+                <iframe width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!4v1748659337900!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ00xcmJwVXc.!2m2!1d-2.147448290987572!2d-79.96818017275172!3f239.1978911500869!4f-21.29469076419079!5f0.4000000000000002" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <span>Ubicación de ESPOL en el campus Gustavo Galindo, Guayaquil, Ecuador.</span>
             </div>
         </div>
+
+        </section>
+        
+        <section class="seccion_main" id="contactame">
+            <h2>Contáctame</h2>
+            <form action="" class="contact_form">
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+                <textarea id="message" name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
             
         <section class="seccion_main" id="referencias">
             <h2>Referencias</h2>
