@@ -47,6 +47,7 @@ header nav.categories ul {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 15px;
 }
 .categories li {
     margin-right: 20px;
